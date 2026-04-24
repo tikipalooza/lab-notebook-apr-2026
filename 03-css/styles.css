@@ -1,0 +1,82 @@
+/* Add your CSS code here */
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+	--gray-border: #ccc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+	color: var(--text-color);
+	line-height: 1.6;
+}
+
+/* Navigation styles */
+.nav {
+  background-color: var(--dark-slate-infinity);
+}
+
+.nav-list {
+	margin: 0;
+	padding: 1rem;
+	padding-left: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav-link {
+	padding: 0.3rem 0.5rem;
+	border-radius: 4px;
+  text-decoration: none;
+	font-weight: 500;
+  color: var(--ice-blue-juvie);
+	/* transition:
+		background 0.2s,
+		color 0.2s; */
+}
+
+.nav-link:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
+}
+
+.books-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/* Main area styles */
+.main-heading {
+	margin: 2rem;
+  color: var(--gothic-gray-blue);
+	text-align: center;
+}
+
+h2 {
+	border-bottom: 2px solid var(--gray-border);
+}
+
+
+.font-cinzel {
+  font-family: 'Cinzel';
+}
+
+/* Table styles */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  padding: 6px;
+  border: 1px solid black;
+}
