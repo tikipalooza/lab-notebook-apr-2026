@@ -1,108 +1,112 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>CSS Exercise 01 - Books</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link font-cinzel" href="#books">ASOIAF Books</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-cinzel" href="#covers">First Edition Covers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-cinzel" href="#povs">
-            Table of POV Characters
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Exercise 01 - Books</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link font-cinzel" href="#books">ASOIAF Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-cinzel" href="#covers"
+              >First Edition Covers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-cinzel" href="#povs">
+              Table of POV Characters
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="books-container">
-    <h1 class="main-heading font-cinzel">A Song of Ice and Fire Books</h1>
-    <section id="books" class="section">
-      <h2 class="h2 font-cinzel">ASOIAF Books</h2>
-      <ul class="books-list">
-        <li>
-          A Song of Ice and Fire series:
-          <ol>
-            <li>A Game of Thrones (1996)</li>
-            <li>A Clash of Kings (1998)</li>
-            <li>A Storm of Swords (2000)</li>
-            <li>A Feast for Crows (2005)</li>
-            <li>A Dance with Dragons (2011)</li>
-          </ol>
-        </li>
+    <main class="books-container">
+      <h1 class="main-heading font-cinzel">A Song of Ice and Fire Books</h1>
+      <section id="books" class="section">
+        <h2 class="h2 font-cinzel">ASOIAF Books</h2>
+        <ul class="books-list">
+          <li>
+            A Song of Ice and Fire series:
+            <ol>
+              <li>A Game of Thrones (1996)</li>
+              <li>A Clash of Kings (1998)</li>
+              <li>A Storm of Swords (2000)</li>
+              <li>A Feast for Crows (2005)</li>
+              <li>A Dance with Dragons (2011)</li>
+            </ol>
+          </li>
 
-        <li>
-          A Knight of the Seven Kingdoms (2015)
-          <ol>
-            <li>The Hedge Knight (1998)</li>
-            <li>The Sworn Sword (2003)</li>
-            <li>The Mystery Knight (2010)</li>
-          </ol>
-        </li>
+          <li>
+            A Knight of the Seven Kingdoms (2015)
+            <ol>
+              <li>The Hedge Knight (1998)</li>
+              <li>The Sworn Sword (2003)</li>
+              <li>The Mystery Knight (2010)</li>
+            </ol>
+          </li>
 
-        <li>Fire &amp; Blood (2018)</li>
-      </ul>
-    </section>
+          <li>Fire &amp; Blood (2018)</li>
+        </ul>
+      </section>
 
-    <section id="covers" class="covers section">
-      <h2 class="h2 font-cinzel">First Edition Covers</h2>
-      <div class="images-container">
-      <img class="book-image"
-        src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
-        alt="first cover of the book A Game of Thrones"
-        width="193"
-        height="300"
-      />
+      <section id="covers" class="covers section">
+        <h2 class="h2 font-cinzel">First Edition Covers</h2>
+        <div class="images-container">
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
+            alt="first cover of the book A Game of Thrones"
+            width="193"
+            height="300"
+          />
 
-      <img class="book-image" 
-        src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
-        alt="first cover of the book A Clash of Kings"
-        width="200"
-        height="300"
-      />
-      <img class="book-image"
-        src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
-        alt="First Edition cover of the book 'A Storm of Swords'"
-        width="190"
-        height="300"
-      >
-      </img>
-      </div>
-    </section>
-    <section id="povs" class="section">
-      <h2 class="h2 font-cinzel">
-        POV Character with the Most Chapters in Each Book
-      </h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="table-heading" rowspan="2">POV Character</th>
-            <th class="table-heading" colspan="5">Books</th>
-            <th class="table-heading" rowspan="2">Total Chapters</th>
-          </tr>
-          <tr>
-            <th class="table-heading">A Game of Thrones</th>
-            <th class="table-heading">A Clash of Kings</th>
-            <th class="table-heading">A Storm of Swords</th>
-            <th class="table-heading">A Feast for Crows</th>
-            <th class="table-heading">A Dance with Dragons</th>
-          </tr>
-        </thead>
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
+            alt="first cover of the book A Clash of Kings"
+            width="200"
+            height="300"
+          />
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
+            alt="First Edition cover of the book 'A Storm of Swords'"
+            width="190"
+            height="300"
+          />
+        </div>
+      </section>
+      <section id="povs" class="section">
+        <h2 class="h2 font-cinzel">
+          POV Character with the Most Chapters in Each Book
+        </h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table-heading" rowspan="2">POV Character</th>
+              <th class="table-heading" colspan="5">Books</th>
+              <th class="table-heading" rowspan="2">Total Chapters</th>
+            </tr>
+            <tr>
+              <th class="table-heading">A Game of Thrones</th>
+              <th class="table-heading">A Clash of Kings</th>
+              <th class="table-heading">A Storm of Swords</th>
+              <th class="table-heading">A Feast for Crows</th>
+              <th class="table-heading">A Dance with Dragons</th>
+            </tr>
+          </thead>
           <tbody>
             <tr>
               <td>Eddard Stark</td>

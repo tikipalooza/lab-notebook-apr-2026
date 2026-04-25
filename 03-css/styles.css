@@ -1,21 +1,24 @@
 /* Add your CSS code here */
 :root {
   --background-color: #f7f7f7;
-	--text-color: #353535;
+  --text-color: #353535;
   --ice-blue-juvie: #8fbcd4;
   --gothic-gray-blue: #6f8796;
   --dark-slate-infinity: #1f2a33;
-	--gray-border: #ccc;
-	--table-emphasis-background: #e9e8e8;
-	--table-background: #f4f4f4;
+  --gray-border: #ccc;
+  --table-emphasis-background: #e9e8e8;
+  --table-background: #f4f4f4;
+  --form-white: #fefefe;
+  --midnight-blue-dark: #0b0b4f;
+  --midnight-blue: #161678;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: var(--background-color);
-	color: var(--text-color);
-	line-height: 1.6;
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 /* Navigation styles */
@@ -24,11 +27,11 @@ body {
 }
 
 .nav-list {
-	margin: 0;
-	padding: 1rem;
-	padding-left: 0;
-	list-style: none;
-	text-align: center;
+  margin: 0;
+  padding: 1rem;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .nav-item {
@@ -37,14 +40,14 @@ body {
 }
 
 .nav-link {
-	padding: 0.3rem 0.5rem;
-	border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
   text-decoration: none;
-	font-weight: 500;
+  font-weight: 500;
   color: var(--ice-blue-juvie);
-	transition:
-		background 0.5s,
-		color 0.5s;
+  transition:
+    background 0.5s,
+    color 0.5s;
 }
 
 .nav-link:hover {
@@ -53,24 +56,23 @@ body {
 }
 
 .books-container {
-	max-width: 800px;
-	margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
   margin-bottom: 50px;
-	padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 /* Main area styles */
 .main-heading {
-	margin: 2rem;
+  margin: 2rem;
   color: var(--gothic-gray-blue);
-	text-align: center;
+  text-align: center;
 }
-
 
 /* Section styles */
 
 h2 {
-	border-bottom: 2px solid var(--gray-border);
+  border-bottom: 2px solid var(--gray-border);
 }
 
 .section {
@@ -78,32 +80,30 @@ h2 {
 }
 
 .books-list li {
-	margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .books-list li > ol {
-	margin-top: 0.4rem;
+  margin-top: 0.4rem;
 }
 
-
 .font-cinzel {
-  font-family: 'Cinzel';
+  font-family: "Cinzel";
 }
 
 /* Images styles */
 .images-container {
-	text-align: center;
+  text-align: center;
 }
 
 .book-image {
-	border-radius: 5px;
-	transition: transform 0.2s ease;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
 }
 
 .book-image:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 /* Table styles */
 .table {
@@ -126,7 +126,104 @@ h2 {
 }
 
 .table-footer td {
-	font-weight: bold;
-	background-color: var(--table-emphasis-background);
+  font-weight: bold;
+  background-color: var(--table-emphasis-background);
 }
 
+/* Form  - IRA Calculator */
+
+.form-container {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--form-white);
+}
+
+.ira-form {
+  /* border: 1px solid var(--gray-border); */
+  padding: 0.5rem 1rem;
+}
+
+.color-bg-blue {
+  background-color: var(--midnight-blue-dark);
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-inline-size: 0;
+}
+
+fieldset.form-element {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.main-heading-form {
+  text-align: center;
+  color: var(--midnight-blue);
+}
+
+.form-element {
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  display: inline-block;
+  width: 50%;
+}
+
+.form-legend {
+  margin-bottom: 0.25rem;
+  padding: 0;
+}
+
+.form-label,
+.form-legend {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  display: inline-block;
+  width: 44%;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.form-radios {
+  margin-left: 40px;
+  margin-bottom: 0.25rem;
+}
+
+/* .form-element:last-of-type {
+  margin: 2rem 0;
+} */
+
+.btn {
+  display: inline-block;
+  width: 49%;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 6px;
+}
+
+.btn-submit {
+  background-color: var(--midnight-blue);
+  color: var(--form-white);
+}
+
+.btn-submit:hover {
+  background-color: var(--midnight-blue-dark);
+}
+
+.form-note {
+  font-size: 0.8rem;
+}
+
+.form-note a {
+  color: var(--midnight-blue);
+}

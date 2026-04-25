@@ -20,7 +20,10 @@ These are the accent colors used for the navbar and the main heading:
 Use 'Cinzel' as the custom font for the navbar and the headings.
 
 ```html
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 <img src="../images/03-css/css-ex01-books-1.png" width=350 alt="screenshot of a navbar, a nested list of The Song of Ice and Fire books, and three images of book covers">
@@ -37,6 +40,6 @@ There is also a hover effect for the images.
 
 Style the `form.html` page as shown in the screenshot below. All the CSS should be added to the styles.css file. The screenshot was taken in Firefox at a viewport width of 1024px.
 
-The accent color is a shade of Midnight Blue (#161678). 
+The accent color is a shade of Midnight Blue (#161678).
 
 <img src="../images/03-css/css-ex02-form.png" width=350 alt="screenshot of a Roth IRA calculator form">
