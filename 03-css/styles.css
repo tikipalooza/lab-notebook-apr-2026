@@ -1,14 +1,19 @@
 /* Add your CSS code here */
 :root {
+  --background-color: #f7f7f7;
+	--text-color: #353535;
   --ice-blue-juvie: #8fbcd4;
   --gothic-gray-blue: #6f8796;
   --dark-slate-infinity: #1f2a33;
 	--gray-border: #ccc;
+	--table-emphasis-background: #e9e8e8;
+	--table-background: #f4f4f4;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  background-color: var(--background-color);
 	color: var(--text-color);
 	line-height: 1.6;
 }
@@ -37,9 +42,9 @@ body {
   text-decoration: none;
 	font-weight: 500;
   color: var(--ice-blue-juvie);
-	/* transition:
-		background 0.2s,
-		color 0.2s; */
+	transition:
+		background 0.5s,
+		color 0.5s;
 }
 
 .nav-link:hover {
@@ -50,6 +55,7 @@ body {
 .books-container {
 	max-width: 800px;
 	margin: 0 auto;
+  margin-bottom: 50px;
 	padding: 0 1rem;
 }
 
@@ -60,8 +66,23 @@ body {
 	text-align: center;
 }
 
+
+/* Section styles */
+
 h2 {
 	border-bottom: 2px solid var(--gray-border);
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.books-list li {
+	margin-bottom: 0.5rem;
+}
+
+.books-list li > ol {
+	margin-top: 0.4rem;
 }
 
 
@@ -69,14 +90,43 @@ h2 {
   font-family: 'Cinzel';
 }
 
+/* Images styles */
+.images-container {
+	text-align: center;
+}
+
+.book-image {
+	border-radius: 5px;
+	transition: transform 0.2s ease;
+}
+
+.book-image:hover {
+	transform: scale(1.1);
+}
+
+
 /* Table styles */
-table {
-  border: 1px solid black;
+.table {
   border-collapse: collapse;
 }
 
-table td,
-table th {
-  padding: 6px;
-  border: 1px solid black;
+.table th,
+.table td {
+  border: 1px solid var(--gray-border);
+  padding: 0.5rem;
+  text-align: center;
 }
+
+.table tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+.table-heading {
+  background-color: var(--table-emphasis-background);
+}
+
+.table-footer td {
+	font-weight: bold;
+	background-color: var(--table-emphasis-background);
+}
+
