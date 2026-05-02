@@ -5,7 +5,6 @@
 1. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 2. Download [VS Code](https://code.visualstudio.com/) as your code editor.
-
    - Set Up VS Code to [launch from the command line](https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line).
 
    - Install the following extensions:
@@ -19,7 +18,7 @@
 
 ### Setting up the Lab Notebook Repo (with SSH)
 
-1. Navigate to your preferred folder and clone the repo. Use any folder name for <folder-name>. 
+1. Navigate to your preferred folder and clone the repo. Use any folder name for <folder-name>.
 
 ```console
 $ git clone git@github.com:caterinasworld/webdev-lab-notebook.git <folder-name>
